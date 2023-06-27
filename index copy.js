@@ -43,7 +43,7 @@ app.use(favicon(path.join(__dirname, 'public/assets/images', 'favicon.ico')));
 
 app.set('view engine', 'html');
 
-app.locals.serviceName = 'Design Manual';
+app.locals.serviceName = 'Standards';
 app.locals.recaptchaPublic = process.env.recaptchaPublic;
 
 // Set up Nunjucks as the template engine
@@ -151,7 +151,7 @@ app.post('/submit-feedback', (req, res) => {
       personalisation: {
         feedback: feedback,
         page: fullUrl,
-        service: 'Design Manual',
+        service: 'Standards',
       },
     })
     .then((response) => {})
