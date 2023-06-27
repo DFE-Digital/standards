@@ -164,11 +164,11 @@ matchRoutes = function (req, res, next) {
 // Start the server
 
 // Run application on configured port
-if (config.env === 'development') {
-  app.listen(config.port - 50, () => {
-  });
-} else {
-  app.listen(config.port);
-}
+// if (config.env === 'development') {
+//   app.listen(config.port - 50, () => {
+//   });
+// } else {
+//   app.listen(config.port);
+// }
 
 app.listen(config.port)
