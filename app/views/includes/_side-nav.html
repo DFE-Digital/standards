@@ -1,0 +1,26 @@
+
+{% set nav_section = [
+  {
+    title: "Example page",
+    url: "/example"
+  }
+] %}
+
+
+<nav class="dfe-vertical-nav">
+
+  {%- if selectedNav === "Example" %}
+
+    <ul class="dfe-vertical-nav__section">
+      {% for item in nav_section %}
+        <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
+          <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+   
+  {% endif %}
+
+
+</nav>
