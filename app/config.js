@@ -12,7 +12,7 @@ module.exports = {
   
   assetPath: process.env.assetPath,
 
-  serviceName: 'Standards'
+  serviceName: 'Standards for good services'
 };
 
 
