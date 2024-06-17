@@ -1,0 +1,57 @@
+{% extends "layouts/homepage.html" %}
+
+{% set selectedNav = "Watch list" %}
+{% set pageName = "Watch list" %}
+{% set pageDescription = "The standards you're watching." %}
+
+
+
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+    <div class="govuk-grid-row">
+
+        <div class="govuk-grid-column-full">
+
+            <h1 class="govuk-heading-l">Standards you're watching</h1>
+
+            <p>You'll be notified by email of any changes to the standards in your watch list. <a href="">Change your preferences</a>.</p>
+
+            <table class="govuk-table">
+                <caption class="govuk-table__caption govuk-table__caption--l govuk-visually-hidden">Standards you're watching</caption>
+                <thead class="govuk-table__head">
+                  <tr class="govuk-table__row">
+                    <th scope="col" class="govuk-table__header">Standard</th>
+                    <th scope="col" class="govuk-table__header">Reference</th>
+                    <th scope="col" class="govuk-table__header">Last update</th>
+                    <th scope="col" class="govuk-table__header">Group</th>
+                    <th scope="col" class="govuk-table__header">Action</th>
+                  </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header"><a href="/ddts88">Publish and maintain an accurate accessibility statement</a></th>
+                    <td class="govuk-table__cell">DDTS88</td>
+                    <td class="govuk-table__cell">18 Jun 2024</td>
+                    <td class="govuk-table__cell">Accessibility</td>
+                    <td class="govuk-table__cell"><a href="">Remove</a></td>
+                  </tr>
+                
+                </tbody>
+              </table>
+
+
+        </div>
+
+    </div>
+</div>
+
+<style>
+
+
+
+</style>
+
+{% endblock %}

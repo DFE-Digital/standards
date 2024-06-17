@@ -51,7 +51,7 @@ var nunjuckEnv = nunjucks.configure(
   [
     'app/views',
     'node_modules/govuk-frontend',
-    'node_modules/dfe-frontend-alpha/packages/components',
+    'node_modules/dfe-frontend/packages/components',
   ],
   {
     autoescape: true,
@@ -154,14 +154,14 @@ app.post('/submit-feedback', (req, res) => {
         service: 'Standards',
       },
     })
-    .then((response) => {})
+    .then((response) => { })
     .catch((err) => console.log(err));
 
   return res.sendStatus(200);
 });
 
 app.get('/design-system/dfe-frontend', function (req, res, next) {
-  const packageName = 'dfe-frontend-alpha';
+  const packageName = 'dfe-frontend';
   let version = '-';
 
   axios
@@ -183,7 +183,7 @@ app.get('/design-system/dfe-frontend', function (req, res, next) {
 app.get(
   '/design-system/dfe-frontend/sass-documentation',
   function (req, res, next) {
-    const packageName = 'dfe-frontend-alpha';
+    const packageName = 'dfe-frontend';
     let version = '-';
 
     axios

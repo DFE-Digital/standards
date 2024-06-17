@@ -1,0 +1,167 @@
+{% extends "layouts/homepage.html" %}
+
+{% set selectedNav = "Standards" %}
+{% set pageName = "Publish and maintain an accurate accessibility statement" %}
+{% set pageDescription = "" %}
+
+
+{% block hero %}
+<div class="dfe-page-header dfe-page-header--with-sub-nav">
+    <div class="govuk-width-container dfe-width-container">
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+                <h1 class="govuk-heading-xl govuk-!-margin-bottom-3 govuk-!-padding-top-5">{{pageName}}</h1>
+            </div>
+            <div class="govuk-grid-column-full">
+                <table class="govuk-table  govuk-!-margin-bottom-3">
+                    <thead class="govuk-table__head">
+                        <tr class="govuk-table__row">
+                            <th class="govuk-table__header" scope="col">Reference</th>
+                            <th class="govuk-table__header govuk-!-width-one-quarter" scope="col">Group</th>
+                            <th class="govuk-table__header govuk-!-width-one-quarter" scope="col">Owner</th>
+                            <th class="govuk-table__header" scope="col">Last updated</th>
+                            <th class="govuk-table__header" scope="col">Watch list</th>
+                        </tr>
+                    </thead>
+                    <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">DDTS88</strong></td>
+                            <td class="govuk-table__cell">Accessibility</td>
+                            <td class="govuk-table__cell">Andy Jones</td>
+                            <td class="govuk-table__cell">18 June 2024</td>
+                            <td class="govuk-table__cell"><a href="">Remove</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <nav class="app-sub-navigation" aria-label="Application menu">
+                    <ul class="app-sub-navigation__list">
+                        <li class="app-sub-navigation__item">
+                            <a class="app-sub-navigation__link"  href="/ddts88">Standard</a>
+                        </li>
+                        <li class="app-sub-navigation__item">
+                            <a class="app-sub-navigation__link" aria-current="page" href="/ddts88-application">Meeting the standard</a>
+                        </li>
+                        <li class="app-sub-navigation__item">
+                            <a class="app-sub-navigation__link" href="/ddts88-history">History</a>
+                        </li>
+
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+    <div class="govuk-grid-row">
+
+
+        <div class="govuk-grid-column-two-thirds">
+
+            <div class="govuk-warning-text">
+                <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+                <strong class="govuk-warning-text__text">
+                  <span class="govuk-visually-hidden">Warning</span>
+                  You are at risk of breaking the law if you fail to meet this standard.
+                </strong>
+              </div>
+
+            <h2 class="govuk-heading-l">Meeting this standard</h2>
+
+            <div class="govuk-inset-text">
+                You must report compliance with this standard in the <a href="">Service health check hub</a>.
+              </div>
+
+            <p class="govuk-body">To meet this standard, you must:</p>
+         
+
+            <h3 class="govuk-heading-m">Publish a statement</h3>
+            <p class="govuk-body">You must publish an accessibility statement in your product before it is accessed by any users.</p>
+            <p class="govuk-body">The statement must be accessed from the footer of all pages from a link with the text "Accessibility" in accordance with <a href="">published guidance</a>.</p>
+            <p class="govuk-body">You can use the <a href="">templates</a> in the accessibility manual to make this easier.</p>
+          
+        
+          
+            <h3 class="govuk-heading-m">Detail WCAG criterion failures</h3>
+            <p class="govuk-body">The statement must include details of all known WCAG (Web Content Accessibility Guidelines) criterion failures.</p>
+            <p class="govuk-body">This transparency is crucial for users with disabilities to be aware of any potential accessibility barriers they may encounter. The process for reporting and managing these accessibility issues is covered by a separate standard, ensuring a systematic approach to addressing and resolving accessibility challenges.</p>
+        
+            <h3 class="govuk-heading-m">Mitigation and resolution actions</h3>
+            <p class="govuk-body">You must state clearly what actions you are taking to mitigate or resolve these accessibility issues, including any expected timelines for resolution. This provides users with assurance that their concerns are being actively addressed and that improvements are being made to enhance their user experience.</p>
+        
+            <h3 class="govuk-heading-m">Update regularly</h3>
+            <p class="govuk-body">The statement must be updated within 2 months following any audits or additional accessibility testing. This timely update ensures that the information remains current and reflects the most recent findings and actions taken to improve accessibility.</p>
+        
+            <h3 class="govuk-heading-m">Complete annual review</h3>
+            <p class="govuk-body">Even if no interim testing or audits are conducted, the statement should be reviewed and updated at least every 12 months. This regular review process ensures ongoing compliance with accessibility standards and demonstrates a commitment to maintaining an accessible digital product for all users.</p>
+         
+
+          
+
+            <table class="govuk-table govuk-!-margin-top-9">
+                <caption class="govuk-table__caption govuk-table__caption--m">All standards in this group</caption>
+                <thead class="govuk-table__head">
+                  <tr class="govuk-table__row">
+                    <th scope="col" class="govuk-table__header">Standard</th>
+                    <th scope="col" class="govuk-table__header">Reference</th>
+                    <th scope="col" class="govuk-table__header">Last update</th>
+                  </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header"><a href="/ddts88">Publish and maintain an accurate accessibility statement</a></th>
+                    <td class="govuk-table__cell">DDTS88</td>
+                    <td class="govuk-table__cell">18 Jun 2024</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header"><a href="/ddts88">Report and manage accessibility issues</a></th>
+                    <td class="govuk-table__cell">DDTS89</td>
+                    <td class="govuk-table__cell">18 Jun 2024</td>
+                  </tr>
+                </tbody>
+              </table>
+
+
+        </div>
+        <div class="govuk-grid-column-one-third">
+
+          
+
+            <h2 class="govuk-heading-m">Related guidance</h2>
+
+            <ul class="govuk-list govuk-list--spaced">
+                <li><a href="">Accessibility manual</a></li>
+            </ul>
+
+
+        </div>
+    </div>
+</div>
+
+<style>
+    .custom-standard-meta {
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+
+
+    .custom-standard-meta li {
+        display: inline;
+        margin-right: 1em;
+        font-size: 0.85em;
+    }
+
+    .custom-standard-meta li span {
+        font-weight: bold;
+    }
+</style>
+
+{% endblock %}

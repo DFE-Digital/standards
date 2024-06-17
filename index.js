@@ -36,14 +36,14 @@ app.locals.recaptchaPublic = process.env.recaptchaPublic
 var nunjuckEnv = nunjucks.configure(
   [
     'app/views',
-    'node_modules/govuk-frontend',
-    'node_modules/dfe-frontend-alpha/packages/components',
+    'node_modules/govuk-frontend/dist/',
+    'node_modules/dfe-frontend/packages/components',
   ],
   {
     autoescape: true,
     express: app,
   },
-)
+);
 
 nunjuckEnv.addFilter('date', dateFilter)
 markdown.register(nunjuckEnv, marked.parse)

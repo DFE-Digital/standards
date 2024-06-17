@@ -1,0 +1,198 @@
+{% extends "layouts/homepage.html" %}
+
+{% set selectedNav = "Standards" %}
+{% set pageName = "Standards" %}
+{% set pageDescription = "Understand the guidance, principles, and standards for good service delivery in the Department
+for Education." %}
+
+
+
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-quarter">
+
+            <div class="govuk-summary-card">
+                <div class="govuk-summary-card__title-wrapper">
+                    <h3 class="govuk-summary-card__title">Filter</h3>
+                    <ul class="govuk-summary-card__actions">
+                        <li class="govuk-summary-card__action">
+                            <a class="govuk-link" href="/standards">Clear</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="govuk-summary-card__content">
+                    <div class="govuk-form-group">
+                        <label for="phaseFilter" class="govuk-label">Applicable phase</label>
+                        <select id="phaseFilter" class="govuk-select govuk-!-width-full">
+                            <option value="">All phases</option>
+                            <option value="Discovery">Discovery</option>
+                            <option value="Alpha">Alpha</option>
+                            <option value="Private Beta">Beta</option>
+                            <option value="Live">Live</option>
+                        </select>
+                    </div>
+
+                    <div class="govuk-form-group">
+                        <fieldset class="govuk-fieldset">
+                            <label for="professionFilter" class="govuk-label">Group</label>
+                            <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                                <div class="govuk-checkboxes__item">
+                                    <input class="govuk-checkboxes__input" id="professionFilter" name="professionFilter"
+                                        type="checkbox" value="Accessibility">
+                                    <label class="govuk-label govuk-checkboxes__label" for="professionFilter">
+                                        Accessibility
+                                    </label>
+                                </div>
+                                <div class="govuk-checkboxes__item">
+                                    <input class="govuk-checkboxes__input" id="professionFilter-1"
+                                        name="professionFilter" type="checkbox" value="Architecture">
+                                    <label class="govuk-label govuk-checkboxes__label" for="professionFilter-1">
+                                        Architecture
+                                    </label>
+                                </div>
+                                <div class="govuk-checkboxes__item">
+                                    <input class="govuk-checkboxes__input" id="professionFilter-2"
+                                        name="professionFilter" type="checkbox" value="Data">
+                                    <label class="govuk-label govuk-checkboxes__label" for="professionFilter-2">
+                                        Data
+                                    </label>
+                                </div>
+                                <div class="govuk-checkboxes__item">
+                                    <input class="govuk-checkboxes__input" id="professionFilter-3"
+                                        name="professionFilter" type="checkbox" value="Product and delivery">
+                                    <label class="govuk-label govuk-checkboxes__label" for="professionFilter-3">
+                                        Product and delivery
+                                    </label>
+                                </div>
+                                <div class="govuk-checkboxes__item">
+                                    <input class="govuk-checkboxes__input" id="professionFilter-4"
+                                        name="professionFilter" type="checkbox" value="Research">
+                                    <label class="govuk-label govuk-checkboxes__label" for="professionFilter-4">
+                                        User research
+                                    </label>
+                                </div>
+                                <div class="govuk-checkboxes__item">
+                                    <input class="govuk-checkboxes__input" id="professionFilter-5"
+                                        name="professionFilter" type="checkbox" value="UCD">
+                                    <label class="govuk-label govuk-checkboxes__label" for="professionFilter-5">
+                                        UCD
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="govuk-grid-column-three-quarters">
+            <h2 class="govuk-heading-l govuk-!-margin-bottom-2">Published standards</h2>
+            <p class="govuk-!-margin-bottom-0" id="filter-text">No filters applied, 2 standards found.</p>
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+            <table class="govuk-table">
+                <thead class="govuk-table__head">
+                  <tr class="govuk-table__row">
+                    <th scope="col" class="govuk-table__header govuk-!-width-one-half">Standard</th>
+                    <th scope="col" class="govuk-table__header">Reference</th>
+                    <th scope="col" class="govuk-table__header">Group</th>
+                    <th scope="col" class="govuk-table__header">Watchlist</th>
+                  </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row" data-group="Accessibility">
+                    <th scope="row" class="govuk-table__header"><a href="/ddts88">Publish and maintain an accurate accessibility statement</a></th>
+                    <td class="govuk-table__cell">DDTS88</td>
+                    <td class="govuk-table__cell">Accessibility</td>
+                    <td class="govuk-table__cell"><a href="/watchlist">Remove</a></td>
+                  </tr>
+                  <tr class="govuk-table__row" data-group="Accessibility">
+                    <th scope="row" class="govuk-table__header"><a href="/ddts88">Report and manage accessibility issues</a></th>
+                    <td class="govuk-table__cell">DDTS89</td>
+                    <td class="govuk-table__cell">Accessibility</td>
+                    <td class="govuk-table__cell"><a href="/watchlist">Add</a></td>
+                  </tr>
+
+                  <tr class="govuk-table__row" data-group="Research">
+                    <th scope="row" class="govuk-table__header"><a href="/ddts88">Participant safeguarding</a></th>
+                    <td class="govuk-table__cell">DDTS89</td>
+                    <td class="govuk-table__cell"> User research</td>
+                    <td class="govuk-table__cell"><a href="/watchlist">Add</a></td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+
+    </div>
+</div>
+
+<style>
+    .custom-standard-meta{
+        list-style-type: none;
+        padding: 0;
+       margin-bottom: 10px;
+    }
+
+ 
+
+    .custom-standard-meta li{
+        display: inline;
+        margin-right: 1em;
+        font-size: 0.85em;
+    }  
+
+    .custom-standard-meta li span{
+        font-weight: bold;
+    }
+
+    
+</style>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const checkboxes = document.querySelectorAll('input[name="professionFilter"]');
+        const tableRows = document.querySelectorAll('.govuk-table__body .govuk-table__row');
+        const filterText = document.getElementById('filter-text');
+
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', function () {
+                filterTableRows();
+            });
+        });
+
+        function filterTableRows() {
+            const selectedGroups = Array.from(checkboxes)
+                .filter(checkbox => checkbox.checked)
+                .map(checkbox => checkbox.value);
+
+            let visibleRowCount = 0;
+
+            tableRows.forEach(row => {
+                const rowGroup = row.getAttribute('data-group');
+                if (selectedGroups.length === 0 || selectedGroups.includes(rowGroup)) {
+                    row.style.display = '';
+                    visibleRowCount++;
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+
+            const selectedCount = selectedGroups.length;
+            const selectedText = selectedCount === 0 ? 'No' : selectedCount;
+            const visibleText = visibleRowCount === 0 ? 'No' : visibleRowCount;
+            const filterTextContent = `${selectedText} filter${selectedCount !== 1 ? 's' : ''} applied, ${visibleText} standard${visibleRowCount !== 1 ? 's' : ''} found.`;
+            filterText.innerText = filterTextContent;
+        }
+
+        // Initial call to display the correct rows based on any pre-checked checkboxes
+        filterTableRows();
+    });
+</script>
+
+{% endblock %}

@@ -1,26 +1,28 @@
-
-{% set nav_section = [
+{% set responsibilites = [
   {
-    title: "Example page",
-    url: "/example"
+    title: "Overview",
+    url: "/responsibilities"
+  },
+  {
+    title: "Chief Digital and Chief Technical Officers",
+    url: "/responsibilities/cdo-cto"
   }
 ] %}
 
 
+
+
 <nav class="dfe-vertical-nav">
 
-  {%- if selectedNav === "Example" %}
-
+  {%- if selectedNav === "Responsibilities" %}
     <ul class="dfe-vertical-nav__section">
-      {% for item in nav_section %}
+      {% for item in responsibilites %}
         <li class="dfe-vertical-nav__section-item {% if item.title === pageName  or setSelectedSideNav === item.title %}dfe-vertical-nav__section-item--current{% endif %}">
           <a class="dfe-vertical-nav__link" href="{{ item.url }}">{{ item.title }}</a>
         </li>
       {% endfor %}
     </ul>
 
-   
   {% endif %}
-
 
 </nav>

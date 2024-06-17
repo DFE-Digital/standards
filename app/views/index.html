@@ -1,63 +1,43 @@
 {% extends "layouts/homepage.html" %}
 
 {% set selectedNav = "Home" %}
-{% set pageName = "Homepage" %}
-
+{% set pageName = "Standards" %}
+{% set pageDescription = "Understand the guidance, principles, and standards for good service delivery in the Department
+for Education." %}
 
 
 {% block hero %}
-
-  <section class="dfe-hero govuk-!-margin-top-0 govuk-!-margin-bottom-0 govuk-!-padding-top-0 govuk-!-padding-bottom-0">
-    <div class="dfe-width-container ">
-      <div class="govuk-grid-row">
-        <div class="govuk-grid-column-full">
-          <div class="govuk-phase-banner">
-  <p class="govuk-phase-banner__content">
-    <strong class="govuk-tag govuk-tag--red govuk-phase-banner__content__tag">
-      Beta
-    </strong>
-    <span class="govuk-phase-banner__text">
-      This is a new service – your <a class="govuk-link govuk-link--inverse" href="https://design.education.gov.uk/design-ops/contact">feedback</a> will help us to improve it.
-    </span>
-  </p>
-</div>
-        </div>
+<section class="dfe-page-hero govuk-!-padding-bottom-9">
+  <div class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">{{pageName}}</h1>
+        <p class="govuk-body-l">{{pageDescription}}</p>
       </div>
     </div>
-  </section>
-
-  <section class="dfe-hero">
-    <div class="dfe-width-container ">
-      <div class="govuk-grid-row">
-        <div class="govuk-grid-column-two-thirds">
-
-          <h1 class="govuk-heading-xl">Standards for good services in the<br/>Department for Educuation</h1>
-
-          <p class="govuk-body-l">Understand the guidance, principles, and standards for good service delivery in the Department for Education.</p>
-        </div>
-      </div>
-    </div>
-
-  </section>
-
+  </div>
+</section>
 {% endblock %}
 
 {% block content %}
+
+<div class="govuk-width-container">
 
   <section class="govuk-!-margin-bottom-9">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-full">
 
-        <div class="dfe-o-banner dfe-o-banner--mirrored govuk-!-margin-top-2">
-          <div class="dfe-o-banner__content-container dfe-light-grey">
-            <div class="dfe-o-banner__inner-content-container">
-              <h2 class="govuk-heading-l">How to apply <br/>the Service Standard</h2>
-              <p>We’ve built a companion service to the <br/>Government Service Standard.</p>
-              <p>This service helps teams follow standards to build accessible, usable, safe, secure, and trusted services.</p>
-              <a href="https://apply-the-service-standard.education.gov.uk/" target="_blank" class="govuk-link govuk-body-l govuk-!-font-weight-bold">View the service</a>
+        <div class="dfe-banner dfe-o-banner--mirrored govuk-!-margin-top-2">
+          <div class="dfe-banner__content-container dfe-light-grey">
+            <div class="dfe-banner__inner-content-container">
+              <h2 class="govuk-heading-l">How to apply <br />the Service Standard</h2>
+              <p>This service helps teams in DfE follow standards to build accessible, usable, safe, secure, and trusted
+                services.</p>
+              <a href="https://apply-the-service-standard.education.gov.uk" target="_blank"
+                class="govuk-link govuk-body-l govuk-!-font-weight-bold">Visit the service</a>
             </div>
           </div>
-          <div class="dfe-o-banner__image-container">
+          <div class="dfe-banner__image-container">
             <figure class="dfe-a-image dfe-a-image--cover">
               <picture class="dfe-a-image__picture">
                 <source srcset="/assets/images/assidfe.webp" type="image/webp">
@@ -80,7 +60,8 @@
           <div class="dfe-card">
             <div class="dfe-card-container">
               <h2 class="govuk-heading-m">
-                <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="https://dfe-digital.github.io/architecture/#standards" target="_blank">Architecture</a>
+                <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header"
+                  href="https://dfe-digital.github.io/architecture/#standards" target="_blank">Architecture</a>
               </h2>
               <p>Architecture principles, standards and guidance.</p>
             </div>
@@ -88,7 +69,8 @@
           <div class="dfe-card">
             <div class="dfe-card-container">
               <h2 class="govuk-heading-m">
-                <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="https://design.education.gov.uk" target="_blank">Design</a>
+                <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header"
+                  href="https://design.education.gov.uk" target="_blank">Design</a>
               </h2>
               <p>Standards for interaction and content designers.</p>
             </div>
@@ -96,7 +78,8 @@
           <div class="dfe-card">
             <div class="dfe-card-container">
               <h2 class="govuk-heading-m">
-                <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="https://technical-guidance.education.gov.uk" target="_blank">Technical</a>
+                <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header"
+                  href="https://technical-guidance.education.gov.uk" target="_blank">Technical</a>
               </h2>
               <p>Coding technical standards and guidelines we follow when building services.</p>
             </div>
@@ -104,7 +87,8 @@
           <div class="dfe-card">
             <div class="dfe-card-container">
               <h2 class="govuk-heading-m">
-                <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="https://user-research.education.gov.uk" target="_blank">User Research </a>
+                <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header"
+                  href="https://user-research.education.gov.uk" target="_blank">User Research </a>
               </h2>
               <p>Guidance, information and support for user researchers.</p>
             </div>
@@ -117,48 +101,17 @@
           <h2 class="govuk-heading-m">Additional guidance</h2>
           <ul class="govuk-list govuk-list--spaced">
             <li>
-              <a href="https://www.gov.uk/guidance/the-technology-code-of-practice" target="_blank" class="govuk-link">Technology Code of Practice</a>
+              <a href="https://www.gov.uk/guidance/the-technology-code-of-practice" target="_blank"
+                class="govuk-link">Technology Code of Practice</a>
             </li>
             <li>
-              <a href="https://www.gov.uk/government/publications/cabinet-office-controls/cabinet-office-controls-guidance-version-40" target="_blank" class="govuk-link">Cabinet Office digital spend control</a>
+              <a href="https://www.gov.uk/government/publications/cabinet-office-controls/cabinet-office-controls-guidance-version-40"
+                target="_blank" class="govuk-link">Cabinet Office digital spend control</a>
             </li>
           </ul>
         </div>
       </div>
-    </section>
+  </section>
+</div>
 
-    <section class="govuk-!-margin-bottom-9">
-
-      <div class="dfe-panel-section">
-
-        <div class="govuk-grid-row">
-
-          <div class="govuk-grid-column-full">
-
-            <h2 class="govuk-heading-l">Service assurance</h2>
-
-          </div>
-
-          <div class="govuk-grid-column-two-thirds">
-
-            <p>Assurance is an important part of delivering services.</p>
-            <p>Our guidance helps you understand what assurance you need to de-risk your service and ensure you're building things the right way.</p>
-
-          </div>
-
-          <div class="govuk-grid-column-one-third">
-
-            <ul class="govuk-list govuk-list--spaced">
-              <li>
-                <a href="https://apply-the-service-standard.education.gov.uk/service-assessments" target="_blank" class="govuk-link govuk-link--inverse govuk-!-font-weight-bold">Service assessments</a>
-              </li>
-            </ul>
-
-          </div>
-        </div>
-
-      </div>
-
-    </section>
-
-  {% endblock %}
+{% endblock %}

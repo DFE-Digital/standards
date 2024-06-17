@@ -1,24 +1,29 @@
- {{ header({
-    "showNav": "false",
-    "showSearch": "false",
-    "showUserName": "false",
-    "userName": "",
-    "userNameURL": "",
-    "selectedNav": selectedNav,
-    "logoPath": "assets/images",
-    "searchInputName": "searchterm",
-    "service": {
-      "name": serviceName
-    },
-    "primaryLinks": [
-      {
-        "url"  : "/",
-        "label" : "Home"
-      },
-       {
-        "url"  : "/example",
-        "label" : "Example"
-      }
-    ]
-  })
+{{ header({
+"showNav": "false",
+"showSearch": "true",
+"showUserName": "false",
+"userName": "",
+"userNameURL": "",
+"selectedNav": selectedNav,
+"logoPath": "assets/images",
+"searchInputName": "searchterm",
+"service": {
+"name": serviceName
+},
+"primaryLinks": [
+{
+"url" : "/",
+"label" : "Home"
+},{
+"url" : "/standards",
+"label" : "Standards"
+}, {
+"url" : "/watchlist",
+"label" : "Watch list"
+}, {
+"url" : "/assurance",
+"label" : "Assurance"
+}
+]
+})
 }}

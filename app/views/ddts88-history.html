@@ -1,0 +1,128 @@
+{% extends "layouts/homepage.html" %}
+
+{% set selectedNav = "Standards" %}
+{% set pageName = "Publish and maintain an accurate accessibility statement" %}
+{% set pageDescription = "" %}
+
+
+{% block hero %}
+<div class="dfe-page-header dfe-page-header--with-sub-nav">
+    <div class="govuk-width-container dfe-width-container">
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+                <h1 class="govuk-heading-xl govuk-!-margin-bottom-3 govuk-!-padding-top-5">{{pageName}}</h1>
+            </div>
+            <div class="govuk-grid-column-full">
+                <table class="govuk-table  govuk-!-margin-bottom-3">
+                    <thead class="govuk-table__head">
+                        <tr class="govuk-table__row">
+                            <th class="govuk-table__header" scope="col">Reference</th>
+                            <th class="govuk-table__header govuk-!-width-one-quarter" scope="col">Group</th>
+                            <th class="govuk-table__header govuk-!-width-one-quarter" scope="col">Owner</th>
+                            <th class="govuk-table__header" scope="col">Last updated</th>
+                            <th class="govuk-table__header" scope="col">Watch list</th>
+                        </tr>
+                    </thead>
+                    <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">DDTS88</strong></td>
+                            <td class="govuk-table__cell">Accessibility</td>
+                            <td class="govuk-table__cell">Andy Jones</td>
+                            <td class="govuk-table__cell">18 June 2024</td>
+                            <td class="govuk-table__cell"><a href="">Remove</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <nav class="app-sub-navigation" aria-label="Application menu">
+                    <ul class="app-sub-navigation__list">
+                        <li class="app-sub-navigation__item">
+                            <a class="app-sub-navigation__link"  href="/ddts88">Standard</a>
+                        </li>
+                        <li class="app-sub-navigation__item">
+                            <a class="app-sub-navigation__link"href="/ddts88-application">Meeting the standard</a>
+                        </li>
+                        <li class="app-sub-navigation__item">
+                            <a class="app-sub-navigation__link"  aria-current="page" href="/ddts88-history">History</a>
+                        </li>
+
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+    <div class="govuk-grid-row">
+
+
+        <div class="govuk-grid-column-two-thirds">
+
+          
+
+            <h2 class="govuk-heading-l">History</h2>
+
+<span class="govuk-caption-m">Current version</span>
+            <h3 class="govuk-heading-m">18 June 2024</h3>
+            <p>The following changes were made to this standard:</p>
+            <ul>
+                <li>Updated guidance on publishing accessibility statements for mobile apps and Power Platform apps</li>
+                <li>Updated links to statement templates</li>
+                <li>Added link to new standard in the group for Accessibility audit requirements</li>
+            </ul>
+         
+            <h3 class="govuk-heading-m">10 February 2024</h3>
+            <p>The following changes were made to this standard:</p>
+            <ul>
+                <li>Guidance added for the regular review of accessibility statements.</li>
+            </ul>
+
+            <h3 class="govuk-heading-m">12 December 2023</h3>
+            <p>Standard published.</p>
+           
+          
+
+
+        </div>
+        <div class="govuk-grid-column-one-third">
+
+          
+
+            <h2 class="govuk-heading-m">Related guidance</h2>
+
+            <ul class="govuk-list govuk-list--spaced">
+                <li><a href="">Accessibility manual</a></li>
+            </ul>
+
+
+        </div>
+    </div>
+</div>
+
+<style>
+    .custom-standard-meta {
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+
+
+    .custom-standard-meta li {
+        display: inline;
+        margin-right: 1em;
+        font-size: 0.85em;
+    }
+
+    .custom-standard-meta li span {
+        font-weight: bold;
+    }
+</style>
+
+{% endblock %}
